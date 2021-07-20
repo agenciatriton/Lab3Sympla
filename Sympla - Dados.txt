@@ -1,0 +1,7 @@
+
+https://organizador.sympla.com.br/minha-conta
+Login: rafael@agenciatriton.com.br
+Senha: angel098
+
+Chave de acesso da API (Token):
+975212475d56ccf9c07561227bb435e01f2bd93009a7197dd3cf1d26c4fe44d1

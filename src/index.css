@@ -1,0 +1,429 @@
+body {
+  margin: 0;
+}
+
+.TopoFixo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0px;
+    background-color: #000000;
+    padding: 10px 0;
+    z-index: 2;
+    color: #FFFFFF;
+}
+
+.AreaTopoFixo {
+  width: calc(100% - 50px);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.AreaTopoFixo div {
+  width: 100%;
+}
+.AreaTopoFixo div:first-child {
+  text-align: left;
+}
+.AreaTopoFixo div:last-child {
+  text-align: right;
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+.LogoTopo {
+  width: 100%;
+  max-width: 130px;
+}
+
+
+.DivTrue {
+  background-color: #ff0000;
+}
+
+.DivFalse {
+  background-color: chartreuse;
+}
+
+.BtLogout {
+  font: 16px 'roboto_condensedlight', Arial, sans-serif;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #cb3333;
+  padding: 3px 7px;
+  outline: none;
+  cursor: pointer;
+  display: block;
+  border-radius: 3px;
+  border: none;
+  margin-left: 10px;
+}
+.BtLogout:hover {
+  color: #FFFFFF;
+  background-color: #ff0000;
+}
+
+.BtCores {
+  font: 16px 'roboto_condensedlight', Arial, sans-serif;
+  text-transform: uppercase;
+  color: #cb3333;
+  background-color: #FFFFFF;
+  padding: 3px 7px;
+  outline: none;
+  cursor: pointer;
+  display: block;
+  border-radius: 3px;
+  border: none;
+  margin-left: 10px;
+}
+.BtCores:hover {
+  color: #cb3333;
+  background-color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.CoresFormDentro {
+  width: calc(90% - 60px);
+  max-width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  background-color: white;
+  padding: 30px;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  box-shadow: 0 -3px 31px 0 rgb(0 0 0 / 30%), 0 6px 20px 0 rgba(0, 0, 0, 0.02);
+}
+
+#CoresForm {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: visible;
+  background: hsla(0, 0%, 0%, 0.5);
+  display: none;
+}
+
+.BtFecharCores {
+  position: absolute;
+  background-color: white;
+  color: #cb3333;
+  padding: 10px 20px;
+  top: -30px;
+  right: 10px;
+  text-transform: uppercase;
+  border-radius: .25rem;
+  font: 15px 'robotobold_condensed', Arial, sans-serif;
+  cursor: pointer;
+}
+
+.BtFecharCores:hover {
+  color: #ff0000;
+}
+
+
+.BotaoDescer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 135px;
+}
+
+.BotaoDescer div {
+  background-color: #000000;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+
+.BotaoDescer div img {
+  width: 100%;
+  height: 100%;
+}
+
+.BotaoExcluir {
+  font: 16px 'VW Head Bold', Arial, sans-serif;
+  background-color: #474747;
+  border: 2px solid #474747;
+  color: #FFFFFF;
+  padding: 10px 15px;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: block;
+  border-radius: 3px;
+  margin: 4px 0;
+  float: right;
+}
+
+
+
+
+
+.BotaoSair {
+  background-color: #ff0000;
+}
+
+.BotaoEntrar {
+  background-color: #019408;
+}
+
+.BotaoMsg {
+  font: 16px 'roboto_condensedbold', Arial, sans-serif;
+  color: #FFFFFF;
+  padding: 10px;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: block;
+  border-radius: 3px;
+  width: 100%;
+  /*max-width: 100px;*/
+  border: none;
+  margin: 5px 5px;
+}
+.BotaoMsg:hover {
+  opacity: 0.7;
+}
+
+.BotaoExcluir:hover {
+  background-color: #333333;
+  border: 2px solid #333333;
+  color: #FFFFFF;
+}
+
+.RolagemChat {
+    text-align: left;
+    width: calc(100% - 50px);
+    margin: 0 auto;
+    padding: 0px 25px;
+    overflow: auto;
+    height: calc(100vh - 90px);
+    margin-top: 70px;
+}
+.RolagemChat div {
+    font: 16px 'robotocondensed', Arial, sans-serif;
+    color: #6F7074;
+    display: flex;
+    align-items: center;
+    width: calc(100% - 30px);
+    border-bottom: 1px solid #d0d0d0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    word-break: break-word;
+}
+.RolagemChat div b {
+  font: 15px 'roboto_condensedbold', Arial, sans-serif;
+  display: block;
+  color: #000000;
+  text-transform: uppercase;
+}
+.RolagemChat div span {
+  width: 100%;
+}
+.RolagemChat div span img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.RolagemChat div span:first-child {
+  max-width: 90px;
+  margin-right: 20px;
+}
+.RolagemChat div span:last-child {
+  max-width: 205px;
+  margin-left: 20px;
+  display: flex;
+}
+
+.RolagemChat div:nth-child(odd){
+	background:#e6e6e6;
+}
+
+.RolagemChat div:nth-child(even){
+	background:#ffffff;
+}
+
+.RolagemChat div div:first-child {
+  max-width: 100px;
+}
+
+.RolagemChat div:last-child {
+  border-bottom: 0px solid #e2e2e2;
+}
+
+.clear {
+  clear: both;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.ClasseAdmin {
+  background-color: #61dafb;
+}
+.ClasseNormal {
+  background-color: #000000;
+}
+.ClasseFormulario {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.LabelCorel {
+  font: 14px 'robotocondensed', Arial, sans-serif;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 5px;
+}
+.CampoForm {
+  width: 100%;
+  background-color: #000000;
+  border: 1px solid #b9b9b9;
+  padding: 15px;
+  width: calc(100% - 32px);
+  background-color: #FFFFFF;
+  color: #000000;
+  outline: none;
+  margin-bottom: 10px;
+  font: 16px 'robotocondensed', Arial, sans-serif;
+  border-radius: 3px;
+}
+.BotaoAcessar {
+  font: 20px 'robotobold_condensed', Arial, sans-serif;
+  background-color: #474747;
+  border: 2px solid #474747;
+  color: #FFFFFF;
+  width: calc(100% - 0px);
+  max-width: 160px;
+  padding: 10px 15px;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.BotaoAcessar:hover {
+  background-color: #333333;
+  border: 2px solid #333333;
+  color: #FFFFFF;
+}
+
+a, button {
+	-webkit-transition: all .2s ease-in-out;
+	   -moz-transition: all .2s ease-in-out;
+		 -o-transition: all .2s ease-in-out;
+		-ms-transition: all .2s ease-in-out;
+			transition: all .2s ease-in-out;
+}
+
+::-moz-selection {
+	color: #FFFFFF;
+	background: #000000;
+}
+::selection {
+	color: #FFFFFF;
+	background: #000000;
+}
+
+.QntConectado {
+  color: #fff;
+  font: 15px "roboto_condensedlight",Arial,sans-serif;
+  text-transform: uppercase;
+}   
+
+.QntConectado span {
+  font: 16px 'robotoblack', Arial, sans-serif;
+  background-color: #474747;
+  padding: 3px 7px;
+  border-radius: 3px;
+  margin-left: 5px;
+}    
+
+
+
+.DivLogin {
+  width: calc(100% - 30px);
+  max-width: 500px;
+  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0 15px;
+}
+
+.DivLoginDentro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  box-shadow: 0 -3px 31px 0 rgb(0 0 0 / 30%), 0 6px 20px 0 rgba(0, 0, 0, 0.02);
+  padding: 30px;
+}
+
+.LogoLogin {
+  text-align: center;
+  background-color: black;
+  display: block;
+  padding: 15px 0px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.LogoLogin img {
+  width: 100%;
+  max-width: 140px;
+}
+
+.LoginOuSenhaIncorretos {
+  font: 15px "roboto_condensedlight",Arial,sans-serif;
+  background: #cb3333;
+  color: #FFFFFF;
+  text-align: center;
+  display: block;
+  padding: 10px;
+  border-radius: 3px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 700px) {
+  .QntConectado { font-size: 0; }
+
+  .RolagemChat div {
+      display: block;
+  }
+  .BotaoMsg {
+      margin-top: 10px;
+      max-width: initial;
+  }
+  .RolagemChat div span:first-child {
+      max-width: 60px;
+      margin-right: 15px;
+      margin-bottom: 10px;
+      float: left;
+  }
+  .LogoTopo {
+    width: 100%;
+    max-width: 80px;
+  }
+  .RolagemChat div span:last-child {
+    max-width: inherit;
+    margin-left: 0px; 
+  }
+  
+}
